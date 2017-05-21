@@ -1,12 +1,62 @@
-# 1. setup Pet.js
+# 1. Setup Pet.js
 #    require mongoose and schema as constance, and database setup
 #    const mongoose = require('mongoose');
 #     const { Schema } = mongoose;
-
+#````
 #   mongoose.connect('mongodb://localhost/pet-search')
 #   const { connection:db } = mongoose;
-
+#
 #   db.on('error', console.error.bind(console, 'connection error;'));
 #   db.once('open', () => {
 #     console.log('connected to recipe database')
 #   });
+#````
+#
+#
+# 2. Setup petSchema in Pet.js and export this model
+#    Creating schemafor Pet
+#    Packaging schema into the mongoose model called Pet, and to look at the petSchema, export the model
+#````
+#    const petSchema = new Schema({
+#      name: {
+#        type: String,
+#        trim: true
+#      },
+#      created_at: {
+#        type: Date,
+#        default: Date.now
+#      }
+#     })
+#     const pet = mongoose.model('Pet', petSchema);
+#
+#     module.exports = Pet;
+#````
+#
+#
+# 4. Change the script of "start" in package.json as below
+#````
+#      "start": "node ./bin/www" => "start": "nodemon ./bin/www"
+#````
+#
+#
+# 5.
+#````
+#    
+#````
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#

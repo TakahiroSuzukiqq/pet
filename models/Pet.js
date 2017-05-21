@@ -10,3 +10,20 @@ db.on('error', console.error.bind(console, 'connection error;'));
 db.once('open', () => {
   console.log('connected to recipe database')
 });
+
+
+const petSchema = new Schema({
+  name: {
+    type: String,     //give attributes
+    trim: true        // name= "   sugar " trim out extra white spaces
+  },
+  created_at: {
+    type: Date,
+    default: Date.now
+  }
+})
+
+
+const pet = mongoose.model('Pet', petSchema);
+
+module.exports = Pet;
