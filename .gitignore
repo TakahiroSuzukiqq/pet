@@ -1,0 +1,12 @@
+# 1. setup Pet.js
+#    require mongoose and schema as constance, and database setup
+#    const mongoose = require('mongoose');
+#     const { Schema } = mongoose;
+
+#   mongoose.connect('mongodb://localhost/pet-search')
+#   const { connection:db } = mongoose;
+
+#   db.on('error', console.error.bind(console, 'connection error;'));
+#   db.once('open', () => {
+#     console.log('connected to recipe database')
+#   });
